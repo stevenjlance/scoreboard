@@ -1,5 +1,5 @@
-import React from 'react';
-import './player.css';
+import React from "react";
+import "./player.css";
 
 function Player(props) {
   return (
@@ -7,9 +7,14 @@ function Player(props) {
       <h1>Player {props.name}</h1>
       <h3>Score: {props.score}</h3>
       <div>
-        <button onClick={()=>props.clickHandler()}>
+        <button onClick={() => props.upClickHandler()}>
           <span role="img" aria-label="up">
             ⬆️
+          </span>
+        </button>
+        <button onClick={() => props.downClickHandler()}>
+          <span role="img" aria-label="up">
+            ⬇️
           </span>
         </button>
       </div>
