@@ -12,6 +12,11 @@ function Player(props) {
             ⬆️
           </span>
         </button>
+        <button>
+          <span role="img" aria-label="up">
+            ⬇️
+          </span>
+        </button>
       </div>
     </div>
   );
